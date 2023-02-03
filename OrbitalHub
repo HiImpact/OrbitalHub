@@ -16,32 +16,14 @@ local main = library:Load{
 -- library.Extension = "txt" (config file extension)
 -- library.Folder = "config folder name"
 
-local tab = main:Tab("Rage")
+local tab = main:Tab("Aimbot")
 
 local section = tab:Section{
-    Name = "Aimbot",
+    Name = "Rage",
     Side = "Left"
 }
 
-local label = section:Label("Label")
-
---label:Set("Label Set")
-
-section:Button{
-    Name = "Destroy UI",
-    Callback  = function()
-        library:Unload()
-    end
-}
-
-section:Button{
-    Name = "Button",
-    Callback  = function()
-        print("Button clicked")
-    end
-}
-
-local seperator = section:Separator("Separator")
+local seperator = section:Separator("Aimbot")
 --separator:Set("Separator Set")
 
 local toggle = section:Toggle{
