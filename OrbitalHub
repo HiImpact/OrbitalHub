@@ -185,7 +185,7 @@ dropdown:Add("Option 4")
 dropdown:Remove("Option 4")
 
 local multidropdown = section:Dropdown{
-    Name = "Multi dropdown",
+    Name = "Gun Mods",
     --Default = {"Option 1"},
     Max = 3, -- makes it multi
     Content = {
