@@ -298,7 +298,7 @@ local keybind = section:Keybind{
 
 local misc = main:Tab("Misc")
 
-local section = tab:Section{
+local misctab = misc:Section{
     Name = "Misc",
     Side = "Left"
 }
