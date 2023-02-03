@@ -1,6 +1,6 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vozoid/ui-libraries/main/drawing/void/source.lua"))()
 
-local watermark = library:Watermark("Orbital Hub")
+local watermark = library:Watermark("orbital hub | dev build")
 -- watermark:Set("Watermark Set")
 -- watermark:Hide() -- toggles watermark
 
