@@ -303,7 +303,7 @@ local misctab = misc:Section{
     Side = "Left"
 }
 
-local toggle = section:Toggle{
+local misctoggle = misctab:Toggle{
     Name = "Toggle",
     Flag = "Toggle 1",
     --Default = true,
