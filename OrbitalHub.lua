@@ -296,6 +296,15 @@ local keybind = section:Keybind{
 --library:LoadConfig("config", true) -- load universal config
 --library:LoadConfig("config") -- load game specific config
 
+local misc = main:Tab("Misc")
+
+local section = tab:Section{
+    Name = "Misc"
+}
+
+local seperator = section:Separator("Test")
+--separator:Set("Separator Set")
+
 local configs = main:Tab("Configuration")
 
 local themes = configs:Section{Name = "Theme", Side = "Left"}
