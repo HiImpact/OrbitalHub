@@ -296,9 +296,9 @@ local keybind = section:Keybind{
 --library:LoadConfig("config", true) -- load universal config
 --library:LoadConfig("config") -- load game specific config
 
-local misc = main:Tab("Misc")
+local misc = main:misc("Misc")
 
-local section = tab:Section{
+local section = tab:misc{
     Name = "Misc",
     Side = "Left"
 }
