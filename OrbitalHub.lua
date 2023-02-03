@@ -347,7 +347,7 @@ local function randomhop(data, failed)
 end
 
 local misctoggle = misctab:Toggle{
-    Name = "Toggle",
+    Name = "Auto Rejoin",
     Flag = "Toggle 1",
     --Default = true,
     Callback = function(Value)
