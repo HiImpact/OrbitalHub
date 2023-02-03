@@ -304,7 +304,7 @@ local misctab = misc:Section{
 }
 
 local TeleportService = game:GetService("TeleportService")
-local data = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/%22..game.PlaceId..%22/servers/Public?sortOrder=Dsc&limit=100%22)).data
+local data = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Dsc&limit=100")).data
 
 local c = 0
 for i = 1, #data do
