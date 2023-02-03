@@ -1,25 +1,25 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vozoid/ui-libraries/main/drawing/void/source.lua"))()
 
-local watermark = library:Watermark("watermark | 60 fps | v4.20 | dev")
+local watermark = library:Watermark("Orbital Hub")
 -- watermark:Set("Watermark Set")
 -- watermark:Hide() -- toggles watermark
 
 local main = library:Load{
-    Name = "vozoid hax or something",
+    Name = "Orbital Hub",
     SizeX = 600,
     SizeY = 650,
     Theme = "Midnight",
     Extension = "json", -- config file extension
-    Folder = "vozoid ui or something" -- config folder name
+    Folder = "Orbital" -- config folder name
 }
 
 -- library.Extension = "txt" (config file extension)
 -- library.Folder = "config folder name"
 
-local tab = main:Tab("Tab")
+local tab = main:Tab("Rage")
 
 local section = tab:Section{
-    Name = "Section",
+    Name = "Aimbot",
     Side = "Left"
 }
 
