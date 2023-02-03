@@ -299,11 +299,18 @@ local keybind = section:Keybind{
 local misc = main:Tab("Misc")
 
 local section = tab:Section{
-    Name = "Misc"
+    Name = "Misc",
+    Side = "Left"
 }
 
-local seperator = section:Separator("Test")
---separator:Set("Separator Set")
+local toggle = section:Toggle{
+    Name = "Toggle",
+    Flag = "Toggle 1",
+    --Default = true,
+    Callback  = function(bool)
+        print("Toggle 1 is now " .. (bool and "enabled" or "disabled"))
+    end
+}
 
 local configs = main:Tab("Configuration")
 
