@@ -512,6 +512,32 @@ ProfilesTextList = Profiles.CreateTextList({
 		end
 	end
 })
+for _,v in pairs(getactors())do --phantom forces out here using actors
+    if tostring(v)=="lol"then --actor named lul
+        syn.run_on_actor(v,[[
+            for _,v in pairs(getgc(true))do
+                if type(v)=="function"then
+                    if debug.getinfo(v).name=="player"then
+                        print("player")
+                        local an
+                        an=hookfunction(v,function(b,c)
+                            if rawget(c,"timescale")then
+                                c.timescale=0--i realized the timescale was fuckin up so heres fixed one
+                            end
+                            if rawget(c,"stdtimescale")then
+                                c.stdtimescale=0
+                            end
+                            if rawget(c,"resettime") then
+                                c.resettime=0
+                            end
+                            return an(b,c)
+                        end)
+                    end
+                end
+            end
+        ]])
+    end
+end
 local OnlineProfilesButton = Instance.new("TextButton")
 OnlineProfilesButton.Name = "OnlineProfilesButton"
 OnlineProfilesButton.LayoutOrder = 1
@@ -1956,4 +1982,3 @@ else
 	coroutine.resume(selfdestructsave)
 	shared.VapeFullyLoaded = true
 end
-loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Phantom_Forces/Gun_Mods.lua"))()
